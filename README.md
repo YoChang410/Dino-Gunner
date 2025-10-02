@@ -1,2 +1,2 @@
 # Dino-Gunner
-Silly Java game I built in 9th grade
+A little singleplayer game I built in 2022. 
