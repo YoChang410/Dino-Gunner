@@ -1,10 +1,13 @@
-#DINO GUNNER - A Chrome Dinosaur Game Spinoff
+# DINO GUNNER - A Chrome Dinosaur Game Spinoff
 
  This is a Java-based game inspired by the classic Chrome browser dinosaur game.
  The game features a dinosaur that can jump over obstacles, shoot enemies,
  and collect power-ups through a shop system.
+
+ ## HOW TO RUN:
  
- ##MAIN FEATURES:
+ 
+ ## MAIN FEATURES:
  - Endless runner gameplay with increasing difficulty
  - Multiple weapon types (shotgun, plasma, railgun, minigun, laser)
  - Power-up system (camouflage, bling, lifesaver, armor, jetpack)
@@ -13,7 +16,7 @@
  - High score tracking and persistence
  - Sound effects and animations
  
- ##GAME CONTROLS:
+ ## GAME CONTROLS:
  - SPACE: Jump
  - MOUSE CLICK: Shoot weapon
  - Various buttons for navigation between game panels

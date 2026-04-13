@@ -584,9 +584,12 @@ class ScorePanel extends JPanel
 		try 
 		{
 			File scorefile = new File("scores.txt");
+			if(!scorefile.exists()) scorefile.createNewFile();
 			scan = new Scanner(scorefile);
 		} 
-		catch (FileNotFoundException e) {}
+		catch (IOException e) {
+			scan = new Scanner("");
+		}
 	}
 }
 /**
