@@ -249,9 +249,9 @@ class MainPanel extends JPanel
 class HomePanel extends JPanel 
 {
 	// Background and decorative images
-	Image cloud = new ImageIcon("cloud.png").getImage();
-	Image ground = new ImageIcon("ground.png").getImage();
-	Image title = new ImageIcon("title.png").getImage();
+	Image cloud = new ImageIcon("media/cloud.png").getImage();
+	Image ground = new ImageIcon("media/ground.png").getImage();
+	Image title = new ImageIcon("media/title.png").getImage();
 	
 	// Animated character and object images
 	Image dino1, dino2, ptero1, ptero2, cactus, minigun1, minigun2, armor;
@@ -282,14 +282,14 @@ class HomePanel extends JPanel
 		super.paintComponent(g);
 		
 		// Load animation frame images
-		dino1 = new ImageIcon("dinoRunning1.png").getImage();
-		dino2 = new ImageIcon("dinoRunning2.png").getImage();
-		ptero1 = new ImageIcon("ptero1.png").getImage();
-		ptero2 = new ImageIcon("ptero2.png").getImage();
-		cactus = new ImageIcon("cactus4.png").getImage();
-		minigun1 = new ImageIcon("minigun.png").getImage();
-		minigun2 = new ImageIcon("minigunS.png").getImage();
-		armor = new ImageIcon("armor.png").getImage();
+		dino1 = new ImageIcon("media/dinoRunning1.png").getImage();
+		dino2 = new ImageIcon("media/dinoRunning2.png").getImage();
+		ptero1 = new ImageIcon("media/ptero1.png").getImage();
+		ptero2 = new ImageIcon("media/ptero2.png").getImage();
+		cactus = new ImageIcon("media/cactus4.png").getImage();
+		minigun1 = new ImageIcon("media/minigun.png").getImage();
+		minigun2 = new ImageIcon("media/minigunS.png").getImage();
+		armor = new ImageIcon("media/armor.png").getImage();
 		
 		g.drawImage(cactus, 700, 500, null); 
 		g.drawImage(cloud, cloudX, 50, null);
@@ -385,7 +385,7 @@ class HomePanel extends JPanel
 class InstructionsPanel extends JPanel 
 {
 	// Instructions image loaded from file
-	Image instructions = new ImageIcon("instructions.png").getImage();
+	Image instructions = new ImageIcon("media/instructions.png").getImage();
 	Image background;
 	
 	/**
@@ -732,23 +732,23 @@ class MenuPlayPanel extends JPanel
 //shows a preview of your dino, before it goes to run.
 {
 	Shop shop;
-	Image ground = new ImageIcon("ground.png").getImage();
-	Image dino = new ImageIcon("dino.png").getImage();
+	Image ground = new ImageIcon("media/ground.png").getImage();
+	Image dino = new ImageIcon("media/dino.png").getImage();
 
 	//same image arrays as dino. 
 	Image[] weaponImages = {
-			new ImageIcon("shotgun.png").getImage(),
-			new ImageIcon("plasma.png").getImage(),
-			new ImageIcon("railgun.png").getImage(),
-			new ImageIcon("minigun.png").getImage(),
-			new ImageIcon("laser.png").getImage()
+			new ImageIcon("media/shotgun.png").getImage(),
+			new ImageIcon("media/plasma.png").getImage(),
+			new ImageIcon("media/railgun.png").getImage(),
+			new ImageIcon("media/minigun.png").getImage(),
+			new ImageIcon("media/laser.png").getImage()
 	};
 	Image[] gearImages = {
-			new ImageIcon("camouflage.png").getImage(),
-			new ImageIcon("bling.png").getImage(),
-			new ImageIcon("lifesaver.png").getImage(),
-			new ImageIcon("armor.png").getImage(),
-			new ImageIcon("jets.png").getImage()
+			new ImageIcon("media/camouflage.png").getImage(),
+			new ImageIcon("media/bling.png").getImage(),
+			new ImageIcon("media/lifesaver.png").getImage(),
+			new ImageIcon("media/armor.png").getImage(),
+			new ImageIcon("media/jets.png").getImage()
 	};
 	
 	public MenuPlayPanel(Shop shopInput)
@@ -824,8 +824,8 @@ class GamePlayPanel extends JPanel implements ActionListener, MouseListener, Key
 	public GamePlayPanel(DinoGunner input, Shop shopInput)// does NOT call run, run is called by the start button in PlayPanel
 	{
 		setBackground(Color.WHITE);
-		ground = new ImageIcon("ground.png").getImage();
-		cloud = new ImageIcon("cloud.png").getImage();
+		ground = new ImageIcon("media/ground.png").getImage();
+		cloud = new ImageIcon("media/cloud.png").getImage();
 		frame = input;
 		score = 0;
 		rocks = new PteroRock[25];
@@ -1264,32 +1264,32 @@ class Shop extends JPanel
 	// giant image arrays to store all weapons, gear, and their descriptions.
 	Image[] weaponImages = 
 		{
-				new ImageIcon("shotgunIcon.png").getImage(),
-				new ImageIcon("plasmaIcon.png").getImage(),
-				new ImageIcon("railgunIcon.png").getImage(),
-				new ImageIcon("minigunIcon.png").getImage(),
-				new ImageIcon("laserIcon.png").getImage()
+				new ImageIcon("media/shotgunIcon.png").getImage(),
+				new ImageIcon("media/plasmaIcon.png").getImage(),
+				new ImageIcon("media/railgunIcon.png").getImage(),
+				new ImageIcon("media/minigunIcon.png").getImage(),
+				new ImageIcon("media/laserIcon.png").getImage()
 		};
 	Image[] gearImages = 
 		{
-				new ImageIcon("camoIcon.png").getImage(),
-				new ImageIcon("blingIcon.png").getImage(),
-				new ImageIcon("lifesaverIcon.png").getImage(),
-				new ImageIcon("armorIcon.png").getImage(),
-				new ImageIcon("jetsIcon.png").getImage()
+				new ImageIcon("media/camoIcon.png").getImage(),
+				new ImageIcon("media/blingIcon.png").getImage(),
+				new ImageIcon("media/lifesaverIcon.png").getImage(),
+				new ImageIcon("media/armorIcon.png").getImage(),
+				new ImageIcon("media/jetsIcon.png").getImage()
 		};
 	Image[] descripionImages =
 		{
-				new ImageIcon("shotgunD.png").getImage(),
-				new ImageIcon("plasmaD.png").getImage(),
-				new ImageIcon("railgunD.png").getImage(),
-				new ImageIcon("minigunD.png").getImage(),
-				new ImageIcon("laserD.png").getImage(),
-				new ImageIcon("camoD.png").getImage(),
-				new ImageIcon("blingD.png").getImage(),
-				new ImageIcon("lifesaverD.png").getImage(),
-				new ImageIcon("armorD.png").getImage(),
-				new ImageIcon("jetsD.png").getImage(),
+				new ImageIcon("media/shotgunD.png").getImage(),
+				new ImageIcon("media/plasmaD.png").getImage(),
+				new ImageIcon("media/railgunD.png").getImage(),
+				new ImageIcon("media/minigunD.png").getImage(),
+				new ImageIcon("media/laserD.png").getImage(),
+				new ImageIcon("media/camoD.png").getImage(),
+				new ImageIcon("media/blingD.png").getImage(),
+				new ImageIcon("media/lifesaverD.png").getImage(),
+				new ImageIcon("media/armorD.png").getImage(),
+				new ImageIcon("media/jetsD.png").getImage(),
 		};
 	
 	JLabel[] imageLabels = new JLabel[10];
@@ -1302,7 +1302,7 @@ class Shop extends JPanel
 		topPanel = new JPanel();
 		topPanel.setBackground(Color.GRAY);
 		creditsDisplay = new JLabel(""+ credits);
-		ImageIcon coinIcon = new ImageIcon("dinoCoins.png");
+		ImageIcon coinIcon = new ImageIcon("media/dinoCoins.png");
 		dinoCoins = new JLabel();
 		dinoCoins.setIcon(coinIcon);
 		topPanel.add(creditsDisplay);
@@ -1480,12 +1480,12 @@ class Cactus
 	
 	// Visual variety - 6 different cactus appearances
 	Image[] cacti = {
-			new ImageIcon("cactus1.png").getImage(),
-			new ImageIcon("cactus2.png").getImage(),
-			new ImageIcon("cactus3.png").getImage(),
-			new ImageIcon("cactus4.png").getImage(),
-			new ImageIcon("cactus5.png").getImage(),
-			new ImageIcon("cactus6.png").getImage() 
+			new ImageIcon("media/cactus1.png").getImage(),
+			new ImageIcon("media/cactus2.png").getImage(),
+			new ImageIcon("media/cactus3.png").getImage(),
+			new ImageIcon("media/cactus4.png").getImage(),
+			new ImageIcon("media/cactus5.png").getImage(),
+			new ImageIcon("media/cactus6.png").getImage() 
 	};
 	Image picture;                   // Currently displayed cactus image
 	public Cactus()// sets the cactus's picture to a random picture from the array, and sets the location so that all cacti are at the same y-level
@@ -1517,8 +1517,8 @@ class Cactus
 class Ptero// Ptero will be the destroyable obstacle. It drops rocks and explosives, which deal damage to your dino.
 {
 	int height, width, x, y, velocity;
-	Image image1 = new ImageIcon("ptero1.png").getImage();
-	Image image2 = new ImageIcon("ptero2.png").getImage();
+	Image image1 = new ImageIcon("media/ptero1.png").getImage();
+	Image image2 = new ImageIcon("media/ptero2.png").getImage();
 	Image picture;
 	int flyingInt = 30;
 	int health = 100;
@@ -1619,61 +1619,61 @@ class Dino
 	int[] reloadTimes = {1000, 250, 1500, 60, 90};
 	//more gigantic image arrays
 	Image[] weaponImages = {
-			new ImageIcon("shotgun.png").getImage(),
-			new ImageIcon("plasma.png").getImage(),
-			new ImageIcon("railgun.png").getImage(),
-			new ImageIcon("minigun.png").getImage(),
-			new ImageIcon("laser.png").getImage()
+			new ImageIcon("media/shotgun.png").getImage(),
+			new ImageIcon("media/plasma.png").getImage(),
+			new ImageIcon("media/railgun.png").getImage(),
+			new ImageIcon("media/minigun.png").getImage(),
+			new ImageIcon("media/laser.png").getImage()
 	};
 	Image[] weaponShootingImages = {
-			new ImageIcon("shotgunS.png").getImage(),
-			new ImageIcon("plasmaS.png").getImage(),
-			new ImageIcon("railgunS.png").getImage(),
-			new ImageIcon("minigunS.png").getImage(),
-			new ImageIcon("laserS.png").getImage()
+			new ImageIcon("media/shotgunS.png").getImage(),
+			new ImageIcon("media/plasmaS.png").getImage(),
+			new ImageIcon("media/railgunS.png").getImage(),
+			new ImageIcon("media/minigunS.png").getImage(),
+			new ImageIcon("media/laserS.png").getImage()
 	};
 	Image[] gearImages = {
-			new ImageIcon("camouflage.png").getImage(),
-			new ImageIcon("bling.png").getImage(),
-			new ImageIcon("lifesaver.png").getImage(),
-			new ImageIcon("armor.png").getImage(),
-			new ImageIcon("jets.png").getImage()
+			new ImageIcon("media/camouflage.png").getImage(),
+			new ImageIcon("media/bling.png").getImage(),
+			new ImageIcon("media/lifesaver.png").getImage(),
+			new ImageIcon("media/armor.png").getImage(),
+			new ImageIcon("media/jets.png").getImage()
 	};
 	Image[] gearImages1 = {
-			new ImageIcon("camouflage.png").getImage(),
-			new ImageIcon("bling.png").getImage(),
-			new ImageIcon("nothing.png").getImage(),
-			new ImageIcon("armor.png").getImage(),
-			new ImageIcon("jetsFired1.png").getImage()
+			new ImageIcon("media/camouflage.png").getImage(),
+			new ImageIcon("media/bling.png").getImage(),
+			new ImageIcon("media/nothing.png").getImage(),
+			new ImageIcon("media/armor.png").getImage(),
+			new ImageIcon("media/jetsFired1.png").getImage()
 	};
 	Image[] gearImages2 = {
-			new ImageIcon("camouflage.png").getImage(),
-			new ImageIcon("bling.png").getImage(),
-			new ImageIcon("nothing.png").getImage(),
-			new ImageIcon("armor.png").getImage(),
-			new ImageIcon("jetsFired2.png").getImage()
+			new ImageIcon("media/camouflage.png").getImage(),
+			new ImageIcon("media/bling.png").getImage(),
+			new ImageIcon("media/nothing.png").getImage(),
+			new ImageIcon("media/armor.png").getImage(),
+			new ImageIcon("media/jetsFired2.png").getImage()
 	};
 	
 	//sound file array
 	File[] shotSounds = {
-			new File("shotgun.wav").getAbsoluteFile(), 
-			new File("plasma.wav").getAbsoluteFile(), 
-			new File("railgun.wav").getAbsoluteFile(), 
-			new File("minigun.wav").getAbsoluteFile(), 
-			new File("laser.wav").getAbsoluteFile()
+			new File("media/shotgun.wav").getAbsoluteFile(), 
+			new File("media/plasma.wav").getAbsoluteFile(), 
+			new File("media/railgun.wav").getAbsoluteFile(), 
+			new File("media/minigun.wav").getAbsoluteFile(), 
+			new File("media/laser.wav").getAbsoluteFile()
 	};
 	
 	//empty image used to display unequipped items 
-	Image empty = new ImageIcon("empty.png").getImage();
+	Image empty = new ImageIcon("media/empty.png").getImage();
 	
 	
 	public Dino(Cactus enemy1, Ptero[] pterosInput, GamePlayPanel panel, int weaponInput, int gearInput)
 	// sets the GamePlayPanel as its "parent panel", so it can call stop() and get information.
 	{
-		jumping = new ImageIcon("dino.png").getImage();
-		running1 = new ImageIcon("dinoRunning1.png").getImage();
-		running2 = new ImageIcon("dinoRunning2.png").getImage();
-		dead = new ImageIcon("dead.png").getImage();
+		jumping = new ImageIcon("media/dino.png").getImage();
+		running1 = new ImageIcon("media/dinoRunning1.png").getImage();
+		running2 = new ImageIcon("media/dinoRunning2.png").getImage();
+		dead = new ImageIcon("media/dead.png").getImage();
 
 		weaponID = weaponInput;
 		gearID = gearInput;
@@ -1821,7 +1821,7 @@ class Dino
 	{
 		try
 		{
-			File hitSound = new File("hit.wav").getAbsoluteFile();
+			File hitSound = new File("media/hit.wav").getAbsoluteFile();
 			sound = AudioSystem.getAudioInputStream(hitSound);
 			shotSound = AudioSystem.getClip();
 			shotSound.open(sound);
@@ -1836,11 +1836,11 @@ class Dino
 class DinoProjectile// projectiles that weapons shoot.
 {
 	Image[] images = {
-			new ImageIcon("shotgunP.png").getImage(),
-			new ImageIcon("plasmaPL.png").getImage(),
-			new ImageIcon("railgunP.png").getImage(),
-			new ImageIcon("minigunP.png").getImage(),
-			new ImageIcon("laserP.png").getImage()
+			new ImageIcon("media/shotgunP.png").getImage(),
+			new ImageIcon("media/plasmaPL.png").getImage(),
+			new ImageIcon("media/railgunP.png").getImage(),
+			new ImageIcon("media/minigunP.png").getImage(),
+			new ImageIcon("media/laserP.png").getImage()
 	};
 	int[] damages = {20, 150, 420, 34, 100};
 	int damage;
@@ -1903,12 +1903,12 @@ class DinoProjectile// projectiles that weapons shoot.
 				{
 					if(x >= 350)
 					{
-						picture = new ImageIcon("plasmaPM.png").getImage();
+						picture = new ImageIcon("media/plasmaPM.png").getImage();
 						damage  = 80;
 					}
 					if(x >= 700)
 					{
-						picture = new ImageIcon("plasmaPS.png").getImage();
+						picture = new ImageIcon("media/plasmaPS.png").getImage();
 						damage = 40;
 					}
 				}
@@ -1923,7 +1923,7 @@ class PteroRock // standard projectile that the ptero drops
 	int x, y, width, height, xV, yV;
 	int damage = 6;
 	int rocks = 1;
-	Image picture = new ImageIcon("rock.png").getImage();
+	Image picture = new ImageIcon("media/rock.png").getImage();
 	GamePlayPanel owner;
 	Dino target;
 	public PteroRock(GamePlayPanel input, Dino targetInput, int xInput, int yInput, int velocity)
@@ -1961,8 +1961,8 @@ class PteroBomb // explosive projectile that the ptero drops
 	boolean shouldExplode;
 	boolean exploded;
 	Image picture;
-	Image bombImage = new ImageIcon("bombP.png").getImage();
-	Image explosionImage =  new ImageIcon("explosion.png").getImage();
+	Image bombImage = new ImageIcon("media/bombP.png").getImage();
+	Image explosionImage =  new ImageIcon("media/explosion.png").getImage();
 	GamePlayPanel owner;
 	Dino target;
 	public PteroBomb(GamePlayPanel input, Dino targetInput, int xInput, int yInput)
@@ -2024,7 +2024,7 @@ class PteroBomb // explosive projectile that the ptero drops
 		AudioInputStream sound;
 		try
 		{
-			File soundFile = new File("explosion.wav").getAbsoluteFile();
+			File soundFile = new File("media/explosion.wav").getAbsoluteFile();
 			sound = AudioSystem.getAudioInputStream(soundFile);
 			shotSound = AudioSystem.getClip();
 			shotSound.open(sound);
